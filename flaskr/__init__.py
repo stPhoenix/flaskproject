@@ -1,1 +1,1 @@
-from .flaskr import app
+from flaskr.blueprints.flaskr import app
