@@ -8,8 +8,14 @@
 """
 
 import os
+import os.path as op
 import tempfile
 import pytest
+import sys
+
+main_path = op.dirname(op.dirname(op.abspath(__file__)))
+sys.path.append(main_path)
+
 from flaskr.factory import create_app
 from flaskr.blueprints.flaskr import init_db
 
