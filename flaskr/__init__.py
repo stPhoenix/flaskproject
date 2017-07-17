@@ -1,1 +1,0 @@
-from flaskr.blueprints.flaskr import app
